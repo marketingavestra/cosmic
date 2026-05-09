@@ -74,12 +74,34 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   useEffect(() => {
+    // Force utm_source on every page load
     const params = new URLSearchParams(window.location.search);
     if (!params.get("utm_source")) {
       params.set("utm_source", "direct");
       const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
       window.history.replaceState(null, "", newUrl);
     }
+
+    // Meta Pixel
+    (function (f: Window, b: Document, e: string, v: string) {
+      if ((f as any).fbq) return;
+      const n: any = ((f as any).fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      });
+      if (!(f as any)._fbq) (f as any)._fbq = n;
+      n.push = n;
+      n.loaded = true;
+      n.version = "2.0";
+      n.queue = [];
+      const t = b.createElement(e) as HTMLScriptElement;
+      t.async = true;
+      t.src = v;
+      const s = b.getElementsByTagName(e)[0];
+      s.parentNode!.insertBefore(t, s);
+    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+
+    (window as any).fbq("init", "2163502934448917");
+    (window as any).fbq("track", "PageView");
   }, []);
 
   return (

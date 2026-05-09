@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Windows 10/Downloads/**)",
+      "Read(//c/Users/Windows 10/.claude/projects/c--Users-Windows-10-Downloads-cosmic-awakening-lab-main-cosmic-awakening-lab-main/tool-results/**)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}

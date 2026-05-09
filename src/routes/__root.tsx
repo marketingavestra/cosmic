@@ -5,6 +5,7 @@ import {
   createRootRouteWithContext,
   useRouter,
 } from "@tanstack/react-router";
+import { useEffect } from "react";
 
 function NotFoundComponent() {
   return (
@@ -71,6 +72,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (!params.get("utm_source")) {
+      params.set("utm_source", "direct");
+      const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+      window.history.replaceState(null, "", newUrl);
+    }
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>

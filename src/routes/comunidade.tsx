@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import heroBg from "@/assets/hero-bg.jpg";
 import heroBgMobile from "@/assets/hero-bg-mobile.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
@@ -13,13 +13,13 @@ export const Route = createFileRoute("/comunidade")({
   component: Comunidade,
   head: () => ({
     meta: [
-      { title: "Os Despertados — Uma Comunidade" },
+      { title: "Comunidade dos Despertos" },
       {
         name: "description",
         content:
           "Uma comunidade de reconexão interna para desbloquear abundância emocional, energética e material.",
       },
-      { property: "og:title", content: "Os Despertados — Uma Comunidade" },
+      { property: "og:title", content: "Comunidade dos Despertos" },
       {
         property: "og:description",
         content: "Acesse a comunidade que nasceu para prosperar.",
@@ -107,7 +107,7 @@ function Comunidade() {
         <div className="relative max-w-5xl mx-auto text-center">
           <div className="mb-24">
             <h1 className="font-display text-[2rem] sm:text-6xl md:text-7xl font-light mb-6 text-foreground leading-[1.15] sm:leading-[1.1] tracking-tight">
-              OS DESPERTADOS <br className="hidden sm:block" />
+              COMUNIDADE DOS DESPERTOS <br className="hidden sm:block" />
               <span className="text-gradient">UMA COMUNIDADE</span>
             </h1>
             <p className="text-base sm:text-2xl text-muted-foreground font-light mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -130,7 +130,7 @@ function Comunidade() {
               href={ctaUrl}
               className="inline-flex items-center justify-center px-10 py-5 rounded-full bg-gradient-gold text-background font-semibold tracking-wide active:scale-95 transition-all duration-300 sm:hover:scale-105 glow-gold text-lg"
             >
-              QUERO ENTRAR NA COMUNIDADE OS DESPERTADOS
+              Quero entrar na Comunidade dos Despertos
             </a>
           </div>
 
@@ -180,7 +180,7 @@ function Comunidade() {
         <div className="relative max-w-3xl mx-auto text-center">
           <span className="text-[10px] sm:text-xs tracking-[0.35em] uppercase text-gold mb-5 block">✦ A Comunidade ✦</span>
           <h2 className="font-display text-[1.75rem] sm:text-5xl font-light mb-8 sm:mb-10 text-gradient leading-[1.2] sm:leading-[1.15]">
-            OS DESPERTADOS É UMA COMUNIDADE DE RECONEXÃO INTERNA
+            COMUNIDADE DOS DESPERTOS É UMA COMUNIDADE DE RECONEXÃO INTERNA
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground font-light leading-relaxed mb-10">
             Uma experiência criada para pessoas que:
@@ -341,14 +341,14 @@ function Comunidade() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20">
             <div className="glass p-6 sm:p-8 rounded-3xl border-gold/5">
               <ul className="space-y-4 text-muted-foreground font-light text-lg">
-                {["Acesso completo à Comunidade Os Despertados","Os 4 Pilares de Expansão","Exercícios profundos de reconexão","Ativações emocionais e energéticas"].map((item) => (
+                {["Acesso completo à Comunidade dos Despertos","Os 4 Pilares de Expansão","Exercícios profundos de reconexão","Ativações emocionais e energéticas"].map((item) => (
                   <li key={item} className="flex items-start gap-3"><span className="text-gold mt-1">✅</span><span>{item}</span></li>
                 ))}
               </ul>
             </div>
             <div className="glass p-8 rounded-3xl border-gold/5">
               <ul className="space-y-4 text-muted-foreground font-light text-lg">
-                {["Reflexões guiadas","Material digital complementar","Acesso à comunidade dos Despertados","Atualizações futuras"].map((item) => (
+                {["Reflexões guiadas","Material digital complementar","Acesso à comunidade dos Despertos","Atualizações futuras"].map((item) => (
                   <li key={item} className="flex items-start gap-3"><span className="text-gold mt-1">✅</span><span>{item}</span></li>
                 ))}
               </ul>
@@ -422,7 +422,7 @@ function Comunidade() {
             <div className="absolute bottom-0 right-0 h-4 w-4 border-b border-r border-gold/30" />
             <h3 className="font-display text-xl sm:text-2xl mb-8 text-foreground/90 text-center">VEJA TUDO O QUE VOCÊ RECEBERÁ:</h3>
             <ul className="text-left space-y-3 text-sm sm:text-base text-muted-foreground font-light mb-12">
-              {["Acesso à Comunidade Os Despertados","Os 4 Pilares de Expansão","Exercícios de reconexão emocional","Ativações energéticas","Ritual guiado de prosperidade","Diário da Expansão","Comunidade exclusiva","Leitura arquétipa bônus","Acesso digital vitalício"].map((item) => (
+              {["Acesso à Comunidade dos Despertos","Os 4 Pilares de Expansão","Exercícios de reconexão emocional","Ativações energéticas","Ritual guiado de prosperidade","Diário da Expansão","Comunidade exclusiva","Leitura arquétipa bônus","Acesso digital vitalício"].map((item) => (
                 <li key={item} className="flex items-center gap-3">✔ {item}</li>
               ))}
             </ul>
@@ -444,7 +444,7 @@ function Comunidade() {
                 href={ctaUrl}
                 className="w-full px-8 py-4 rounded-full bg-gradient-gold text-background font-medium tracking-wide active:scale-95 transition-all duration-300 sm:hover:scale-105 glow-gold inline-flex items-center justify-center text-lg uppercase max-w-sm mx-auto"
               >
-                Quero entrar na Comunidade Os Despertados
+                Quero entrar na Comunidade dos Despertos
               </a>
               <p className="text-[11px] sm:text-sm italic text-muted-foreground/80 max-w-md mx-auto leading-relaxed text-center">
                 "A vida que você deseja talvez comece na identidade que você ainda não permitiu existir."
@@ -456,7 +456,7 @@ function Comunidade() {
 
       <footer className="relative py-10 px-5 border-t border-border/30 pb-24 sm:pb-10">
         <div className="max-w-6xl mx-auto text-center text-[10px] sm:text-xs tracking-[0.3em] uppercase text-muted-foreground/60">
-          Os Despertados · Uma Comunidade · 2026
+          Comunidade dos Despertos · Uma Comunidade · 2026
         </div>
       </footer>
 
@@ -466,7 +466,7 @@ function Comunidade() {
           href={ctaUrl}
           className="flex items-center justify-center w-full px-8 py-4 rounded-full bg-gradient-gold text-background font-medium tracking-wide active:scale-95 transition glow-gold"
         >
-          Quero entrar na Comunidade Os Despertados
+          Quero entrar na Comunidade dos Despertos
         </a>
       </div>
     </main>

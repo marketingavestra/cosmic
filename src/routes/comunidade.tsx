@@ -107,7 +107,7 @@ function Comunidade() {
         <div className="relative max-w-5xl mx-auto text-center">
           <div className="mb-24">
             <h1 className="font-display text-[2rem] sm:text-6xl md:text-7xl font-light mb-6 text-foreground leading-[1.15] sm:leading-[1.1] tracking-tight">
-              COMUNIDADE DOS DESPERTOS <br className="hidden sm:block" />
+              COMUNIDADE DOS Despertos <br className="hidden sm:block" />
               <span className="text-gradient">UMA COMUNIDADE</span>
             </h1>
             <p className="text-base sm:text-2xl text-muted-foreground font-light mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -180,7 +180,7 @@ function Comunidade() {
         <div className="relative max-w-3xl mx-auto text-center">
           <span className="text-[10px] sm:text-xs tracking-[0.35em] uppercase text-gold mb-5 block">✦ A Comunidade ✦</span>
           <h2 className="font-display text-[1.75rem] sm:text-5xl font-light mb-8 sm:mb-10 text-gradient leading-[1.2] sm:leading-[1.15]">
-            COMUNIDADE DOS DESPERTOS É UMA COMUNIDADE DE RECONEXÃO INTERNA
+            COMUNIDADE DOS Despertos É UMA COMUNIDADE DE RECONEXÃO INTERNA
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground font-light leading-relaxed mb-10">
             Uma experiência criada para pessoas que:
